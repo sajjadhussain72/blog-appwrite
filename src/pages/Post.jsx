@@ -33,13 +33,13 @@ export default function Post() {
     };
 
     return post ? (
-        <div className="py-8">
+        <div className="py-8 border rounded-lg bg-opacity-70 bg-white m-10">
             <Container>
-                <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
+                <div className="w-full flex justify-center mb-4 relative rounded-xl p-2">
                     <img
                         src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
-                        className="rounded-xl"
+                        className="rounded-xl shadow-lg "
                     />
 
                     {isAuthor && (
@@ -56,7 +56,7 @@ export default function Post() {
                     )}
                 </div>
                 <div className="w-full mb-6">
-                    <h1 className="text-2xl font-bold">{post.title}</h1>
+                <h1 className="text-base font-semibold text-gray-90">{post.title}</h1>
                 </div>
                 <div className="browser-css">
                     {parse(post.content)}

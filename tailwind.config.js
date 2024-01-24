@@ -5,8 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+        // require('@tailwindcss/aspect-ratio'),
+
+  ],
 }
 
+  // // tailwind.config.js
+  // module.exports = {
+  //   // ...
+  //   plugins: [
+  //     // ...
+  //   ],
+  // }
